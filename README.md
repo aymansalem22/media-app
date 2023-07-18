@@ -27,11 +27,13 @@ Media playlist application
         org.springframework.boot:spring-boot-starter-web – This is the base dependency 
         for creating REST and web applications.
 
-        org.springframework.boot:spring-boot-starter-thymeleaf – This is for templating the server-side HTML response. 
+        org.springframework.boot:spring-boot-starter-thymeleaf – This is for templating
+        the server-side HTML response. 
 
     - Persistence
         org.springframework.boot:spring-boot-starter-data-jpa
-        com.h2database:h2 – As we are going to use the H2 database for persisting our data, we use this library. 
+        com.h2database:h2 – As we are going to use the H2 database for persisting our data,
+        we use this library. 
 
     - Swagger
 
@@ -49,7 +51,7 @@ Media playlist application
         and constructors for Java classes.
 
         org.springframework.boot:spring-boot-devtools – for live reload and hot-swapping of the application;
-        as we change the code, we         need this dependency.
+        as we change the code, we  need this dependency.
 
      - Server
         org.springframework.boot:spring-boot-starter-tomcat – our application is going to run inside
