@@ -24,7 +24,8 @@ Media playlist application
 
     - Spring Web
 
-        org.springframework.boot:spring-boot-starter-web – This is the base dependency for creating REST and web applications.
+        org.springframework.boot:spring-boot-starter-web – This is the base dependency 
+        for creating REST and web applications.
 
         org.springframework.boot:spring-boot-starter-thymeleaf – This is for templating the server-side HTML response. 
 
@@ -34,7 +35,8 @@ Media playlist application
 
     - Swagger
 
-        Swagger is a REST API documentation library. For integrating the same with the application we are going to build, we need the          following dependencies:
+        Swagger is a REST API documentation library. For integrating the same with the application
+        we are going to build, we need the following dependencies:
         io.springfox:springfox-spring-webmvc:2.10.5
         io.springfox:springfox-swagger2:2.10.5
         io.springfox:springfox-swagger-ui:2.10.5
@@ -43,15 +45,19 @@ Media playlist application
 
     - Development Tools
 
-        org.projectlombok:lombok – for generating getter, setters, toString, hashcode, equals, and constructors for Java classes.
+        org.projectlombok:lombok – for generating getter, setters, toString, hashcode, equals,
+        and constructors for Java classes.
 
-        org.springframework.boot:spring-boot-devtools – for live reload and hot-swapping of the application; as we change the code, we         need this dependency.
+        org.springframework.boot:spring-boot-devtools – for live reload and hot-swapping of the application;
+        as we change the code, we         need this dependency.
 
      - Server
-        org.springframework.boot:spring-boot-starter-tomcat – our application is going to run inside a tomcat web server.
+        org.springframework.boot:spring-boot-starter-tomcat – our application is going to run inside
+        a tomcat web server.
 
      - Utilities
-        com.google.guava:guava:29.0-jre – contains various utility methods for creating and manipulating Java collections and many             more.
+        com.google.guava:guava:29.0-jre – contains various utility methods for creating and manipulating 
+        Java collections and many more.
         
         
      - In build.gradle, we will add the following dependencies manually:
