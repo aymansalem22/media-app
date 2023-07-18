@@ -52,3 +52,11 @@ Media playlist application
 
      - Utilities
         com.google.guava:guava:29.0-jre – contains various utility methods for creating and manipulating Java collections and many             more.
+        
+        
+     - In build.gradle, we will add the following dependencies manually:
+
+       implementation 'com.google.guava:guava:29.0-jre'
+       implementation 'io.springfox:springfox-spring-webmvc:2.10.5'
+       implementation 'io.springfox:springfox-swagger2:2.10.5'
+       implementation 'io.springfox:springfox-swagger-ui:2.10.5' 
