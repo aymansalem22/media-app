@@ -15,9 +15,4 @@ CREATE TABLE IF NOT EXISTS playlist
    created_on DATE DEFAULT sysdate,
    FOREIGN KEY(playlist_id) REFERENCES playlist(id) ON UPDATE CASCADE
    
-   
-   
-  
-  
-  
   )
