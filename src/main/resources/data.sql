@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS playlist
    created_on DATE DEFAULT sysdate
  );
  
+ 
  CREATE TABLE IF NOT EXISTS song
   (
    id BIGINT auto_increment PRIMARY KEY,
