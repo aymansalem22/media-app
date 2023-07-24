@@ -19,11 +19,16 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-@Data
+
 @Entity
 @Table(name= "playlist")
 public class Playlist {
 	
+	
+	public Playlist() {
+		
+	}
+
 	@GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private BigInteger id;
@@ -38,6 +43,40 @@ public class Playlist {
 	@OneToMany(cascade = CascadeType.ALL)
 	@JoinColumn
 	private Collection<Song> songs;
+
+	public BigInteger getId() {
+		return id;
+	}
+
+	public void setId(BigInteger id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Date getCreatedOn() {
+		return createdOn;
+	}
+
+	public void setCreatedOn(Date createdOn) {
+		this.createdOn = createdOn;
+	}
+
+	public Collection<Song> getSongs() {
+		return songs;
+	}
+
+	public void setSongs(Collection<Song> songs) {
+		this.songs = songs;
+	}
+	
+	
 
 	
 }
