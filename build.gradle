@@ -1,3 +1,4 @@
+
 plugins {
 	id 'org.springframework.boot' version '2.3.1.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
@@ -5,7 +6,7 @@ plugins {
 	id 'war'
 	id 'eclipse'
 	id 'idea'
-	id 'de.benediktritter.maven-plugin-development' version '0.4.2'
+	id 'maven'
 }
 
 group = 'com.oberla'
@@ -24,7 +25,7 @@ repositories {
 
 dependencies {
 	
-	implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml'
 	
@@ -44,11 +45,14 @@ dependencies {
     implementation 'io.springfox:springfox-spring-webmvc:2.10.5'
 	implementation 'io.springfox:springfox-swagger2:2.10.5'
 	implementation 'io.springfox:springfox-swagger-ui:2.10.5'
+	
+	
 
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
 }
+
 
 test {
     useJUnitPlatform()
